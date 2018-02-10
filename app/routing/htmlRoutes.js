@@ -1,9 +1,15 @@
+var path = require("path");
 
-
-// This allows the server to send any files that are not current specified via routes
-// in htmlRoutes or apiRoutes
-app.use(express.static("public"));
+module.exports = function(app) {
 
 // GET route for home.html
+app.get("/", (req, res)=> {
+    res.sendFile(path.join(__dirname, "../public/home.html"))
+});
 
 // GET route for survey.html
+app.get("/survey", (req, res)=> {
+    res.sendFile(path.join(__dirname, "../public/survey.html"))
+});
+
+}
