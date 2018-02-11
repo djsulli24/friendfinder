@@ -2,21 +2,21 @@ var friends = {
     friendList: [
         {
             name: "Robert",
-            photo: 'a',
+            photo: 'http://www.matse.psu.edu/sites/default/files/faculty_profile/robert-hickey-web.jpg',
             scores: [
                 5,1,2,5,5,4,3,2,3,5
             ]
         }, 
         {
             name: "Karen",
-            photo: 'a',
+            photo: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAe3AAAAJGUwYTU2NTJmLTI3Y2QtNGExNy1hNjliLTMxMzM0MDc0MDgzYw.jpg',
             scores: [
                 1,5,2,2,3,1,5,1,2,1
             ]
         },
         {
             name: "Brandy",
-            photo: 'a',
+            photo: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAjWAAAAJGRhMTM2NDRiLTFlODAtNDFiZi05ZjdiLTJlNzMyZjdjZTAyMA.jpg',
             scores: [
                 3,3,2,4,3,5,1,5,3,3
             ]
