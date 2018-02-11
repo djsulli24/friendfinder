@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
 $("#viewFriends")
 .click(function () {
@@ -9,7 +9,12 @@ $("#viewFriends")
 
 $("#postFriends")
 .click(function () {
-    $.post("/api/friends", {name: 'Daniel', photo: 'http://www.google.com/', scores: [1,2,3,4,5]}, function(data) {
+    $.post("/api/friends", 
+    {
+        name: "Marian",
+        photo: 'a',
+        scores: JSON.stringify([5,1,2,5,5,4,3,2,3,3])
+    }, function(data) {
         $("#bestFriend").append(JSON.stringify(data));
     })
 });

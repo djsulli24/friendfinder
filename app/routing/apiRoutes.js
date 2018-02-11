@@ -8,9 +8,9 @@ app.get('/api/friends', (req, res)=> {
 
 app.post('/api/friends', (req, res)=> {
     var friend = req.body;
+    friend.scores = JSON.parse(friend.scores);
     friends.friendList.push(friend);
-    console.log(friends.friendList)
-    res.json(friends.friendList);
+    res.json(friends.findFriend());
 });
 
 };
